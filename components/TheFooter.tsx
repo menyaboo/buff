@@ -1,3 +1,7 @@
+import vk from '@/public/img/icon/vk.svg'
+import telegram from '@/public/img/icon/telegram.svg'
+import twitter from '@/public/img/icon/twitter.svg'
+
 export default function TheFooter() {
   return (
     <footer>
@@ -18,9 +22,9 @@ export default function TheFooter() {
             <div className={'social'}>
               <h1>Социальные сети</h1>
               <div className={'icon'}>
-                <a href={'/'}><img alt={'vk'} src='/img/icon/vk.svg'/></a>
-                <a href={'/'}><img alt={'telegram'} src='/img/icon/telegram.svg'/></a>
-                <a href={'/'}><img alt={'twitter'} src='/img/icon/twitter.svg'/></a>
+                <a href={'/'}><img alt={'vk'} src={vk.src}/></a>
+                <a href={'/'}><img alt={'telegram'} src={telegram.src}/></a>
+                <a href={'/'}><img alt={'twitter'} src={twitter.src}/></a>
               </div>
             </div>
           </div>
