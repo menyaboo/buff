@@ -2,6 +2,7 @@
 import Link from "next/link";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import img1 from "@/public/img/x06lbrEN3i8.jpg"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -92,7 +93,7 @@ export default function HomeNews() {
         {news.map((el, index) =>
           <SwiperSlide key={index}>
             <div className={'slider-item'}>
-              <div className={'item-img'} style={{background: `url(/img/${el.img}) center center no-repeat`}}></div>
+              <div className={'item-img'} style={{background: `url(${img1.src}) center center no-repeat`}}></div>
               <p className={'date'}>{getDate(el.date)}</p>
               <h1 className={'name'}>{el.name}</h1>
               <p className={'description'}>{el.description}</p>

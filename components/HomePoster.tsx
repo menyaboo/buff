@@ -1,4 +1,5 @@
 import Link from "next/link";
+import img1 from "@/public/img/x06lbrEN3i8.jpg"
 
 const scene:any = [
   {id: 1, name: 'Основная сцена'},
@@ -51,7 +52,7 @@ export default function HomePoster() {
         {prom.map((el: any, index: number) =>
           <div key={index} className={`poster-card`} style={{width: `${grid[index] === 2 ? '60%' : '40%'}`}}>
             <div className={'poster-card_wrapper'}>
-              <div className={'poster-img'} style={{background: `url(/img/${el.img}) center center no-repeat`}}></div>
+              <div className={'poster-img'} style={{background: `url(${img1.src}) center center no-repeat`}}></div>
               <div className={'poster-info'}>
                 <div className={'poster-info_date'}>
                   <span className={'date'}>{getDate(el.date)}</span>
