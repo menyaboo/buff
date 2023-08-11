@@ -73,7 +73,7 @@ function getDate(date: Date):any {
 export default function HomeNews() {
   return (
     <div className={'home-news container'}>
-      <div className={'flex items-center justify-between'}>
+      <div className={'name-section'}>
         <h1>Новости</h1>
         <Link href={"/"}>ВСЕ НОВОСТИ </Link>
       </div>

@@ -44,7 +44,7 @@ function getTime(date: Date, sceneId: number):any {
 export default function HomePoster() {
   return (
     <div className={'home-poster container'}>
-      <div className={'flex items-center justify-between'}>
+      <div className={'name-section'}>
         <h1>Афиша</h1>
         <Link href={"/"}>ПОСМОТРЕТЬ ВСЕ </Link>
       </div>
