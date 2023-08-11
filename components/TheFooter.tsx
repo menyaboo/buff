@@ -33,7 +33,7 @@ export default function TheFooter() {
             <form>
               <div className={'flex items-center'}>
                 <input type={'text'} placeholder={'name@gmail.com'} className={'text-input'}/>
-                <div className={'form-submit_arrow'}>---></div>
+                <div className={'form-submit_arrow'}>{'--->'}</div>
               </div>
             </form>
           </div>
