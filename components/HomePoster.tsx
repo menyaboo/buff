@@ -15,12 +15,6 @@ const prom:any = [
   {id: 4, name: "Островский #любовь", author: "Александр Грибоедов", premierStatus: false, img: "wLs2kLjyg_c.jpg", date: new Date(2023, 8, 15, 19), sceneId: 1},
 ]
 
-const grid:any = [
-  2, 1,
-  1, 2,
-  2, 1
-]
-
 function getDate(date: Date):any {
   if (!date) return
 
@@ -50,7 +44,7 @@ export default function HomePoster() {
       </div>
       <div className={'poster'}>
         {prom.map((el: any, index: number) =>
-          <div key={index} className={`poster-card`} style={{width: `${grid[index] === 2 ? '60%' : '40%'}`}}>
+          <div key={index} className={`poster-card xl`}>
             <div className={'poster-card_wrapper'}>
               <div className={'poster-img'} style={{background: `url(${img1.src}) center center no-repeat`}}></div>
               <div className={'poster-info'}>
