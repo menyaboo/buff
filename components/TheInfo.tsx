@@ -3,6 +3,7 @@ import {useState, useEffect} from "react";
 
 const TheInfo = () => {
   const [theme, setTheme] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const [isHover, setValue] = useState(false);
 
   useEffect(() => {
     if (theme) {
