@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo from "../public/img/buff-logo.png"
 import {useState} from "react";
 
-const TheHeader = () => {
+const TheInfo = () => {
   const [isHover, setValue] = useState(false);
 
   const mouseEnter = () => {
@@ -40,4 +40,4 @@ const TheHeader = () => {
 )
 }
 
-export {TheHeader}
+export {TheInfo}
