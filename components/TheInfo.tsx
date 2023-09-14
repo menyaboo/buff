@@ -23,7 +23,7 @@ const TheInfo = () => {
 
   return (
     <div className={'prew-info'}>
-      <p>Тестовый макет</p>
+      <p>Тестовый макет <span style={{fontStyle: "italic"}}>(только ПК версия)</span></p>
       <button onClick={handleThemeSwitch}>сменить тему</button>
     </div>
   )
