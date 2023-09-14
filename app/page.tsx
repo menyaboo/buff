@@ -11,6 +11,7 @@ export default function Home() {
       <HomePoster />
       <HomeNews />
       <TheFooter />
+      <TheInfo/>
     </section>
   )
 }
