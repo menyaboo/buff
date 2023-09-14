@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* ROOT */
+//system theme
 :root {
   --default-font: Montserrat;
   --font-size: 18px;
@@ -13,14 +14,36 @@
   --accent: #9b2b2e;
   --margin-nav: 120px;
 }
-
 @media (prefers-color-scheme: dark) {
-  :root[data-color-scheme="dark"],  {
+  :root,  {
     --foreground-rgb: #f1f1f1;
     --background-rgb: #1c1c1c;
     --background-rgb_footer: #2e2e2e;
     --foreground-rgb_second: #ccc;
   }
+}
+
+//change theme
+:root[data-color-scheme="light"] {
+  --default-font: Montserrat;
+  --font-size: 18px;
+  --foreground-rgb: #3c3c3c;
+  --foreground-rgb_second: #666;
+  --background-rgb: #fff;
+  --background-rgb_footer: #f1f1f1;
+  --accent: #9b2b2e;
+  --margin-nav: 120px;
+}
+
+:root[data-color-scheme="dark"],  {
+  --default-font: Montserrat;
+  --font-size: 18px;
+  --foreground-rgb: #f1f1f1;
+  --foreground-rgb_second: #ccc;
+  --background-rgb: #1c1c1c;
+  --background-rgb_footer: #2e2e2e;
+  --accent: #9b2b2e;
+  --margin-nav: 120px;
 }
 
 /* FONT */
@@ -32,7 +55,6 @@
 * {
   margin: 0;
   padding: 0;
-  //transition: color, background-color .5s ease;
 }
 
 body {
@@ -430,6 +452,7 @@ footer {
   bottom: 20px;
   padding: 10px 20px;
   background: var(--background-rgb);
+  border: 3px solid var(--background-rgb_footer);
   border-radius: 5px;
 
   button {

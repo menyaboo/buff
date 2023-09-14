@@ -2,7 +2,12 @@
 import {useState, useEffect} from "react";
 
 const TheInfo = () => {
-  const [theme, setTheme] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  function getSystemTheme(): boolean {
+    if (typeof window !== 'undefined')
+      return window.matchMedia('(prefers-color-scheme: dark)').matches
+    return false
+  }
+  const [theme, setTheme] = useState(getSystemTheme());
 
   useEffect(() => {
     if (theme) {
